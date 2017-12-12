@@ -1,5 +1,4 @@
 __author__ = 'brianwhitney'
-import re
 
 
 class ElementRef:
