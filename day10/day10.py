@@ -2,7 +2,7 @@ __author__ = 'brianwhitney'
 
 #listofvalues = [192, 69, 168, 160, 78, 1, 166, 28, 0, 83, 198, 2, 254, 255, 41, 12]
 listofvalues = []
-with open("/Users/brianwhitney/PycharmProjects/aoc2017/day10/day10.txt") as values:
+with open("day10.txt") as values:
     for char in values.read().strip():
         listofvalues.append(ord(char))
 #listofvalues = []
