@@ -1,8 +1,10 @@
 from collections import OrderedDict
 
+
+
 class Firewall:
 
-    def __init__(self, layersfile, delay=0):
+    def __init__(self, layersfile, delay=0, ):
         self.layers = OrderedDict()
         self.hits = []
         self.end = 0
@@ -58,6 +60,8 @@ class Firewall:
                 return True
         return False
 
+    def
+
 
 class Layer:
 
@@ -97,8 +101,10 @@ firewall = Firewall("day13.txt")
 while(firewall.moveOne()):
     pass
 
-print firewall.pico
 print firewall.getSeverity()
+
+
+
 
 
 trycount = 1
@@ -108,7 +114,7 @@ while True:
         if firewall.countHits() > 0:
             break
     if firewall.countHits() == 0:
-        print trycount
-        print "picos: {}".format(firewall.pico)
+        print "Had to wait: {} picos".format(trycount)
+        print "Total picos: {}".format(firewall.pico)
         break
     trycount = trycount + 1
